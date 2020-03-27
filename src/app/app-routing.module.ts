@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SimpleComponent } from './pages/simple/simple.component';
 import { App1SharedModule } from 'projects/app1/src/app/app.module';
 import { App2SharedModule } from 'projects/app2/src/app/app.module';
 import { App3SharedModule } from 'projects/app3/src/app/app.module';

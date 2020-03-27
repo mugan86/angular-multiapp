@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-view1',
@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
       App1 View1 Works!
     </p>
   `,
-  styles: []
+  styles: [`
+    p {
+      color: blue
+    }
+  `],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class View1Component implements OnInit {
 

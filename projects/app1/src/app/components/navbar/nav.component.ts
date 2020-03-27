@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -31,13 +31,18 @@ import { Component, OnInit } from '@angular/core';
     }
     li a:hover {
       background-color: #161616;
-      color: white;
+      color: white !important;
+    }
+    li a:visited {
+      background-color: #161616;
+      color: black;
     }
     .active {
       background-color: #161616;
-      color: white;
+      color: white !important;
     }
-  `]
+  `],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class NavComponent implements OnInit {
 
